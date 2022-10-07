@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #eed758;
+    background-color: gray;
 }
 
 .header_img {
@@ -15,67 +15,103 @@
     height: 20vh;
 }
 
+.header_menu {
+    background: url(../images/menu_bg_brown.png) left top repeat-x;
+    background-color: rgba(248, 206, 129, 0.7);
+}
+
 .header_menu ul {
-    list-style: none;
-    border-bottom: 1px solid black;
-    justify-content: end;
+    height: 6vh;
     display: flex;
-    height: 5vh;
+    list-style: none;
+    justify-content: end;
+    background-color: rgba(248, 206, 129, 0.7);
     align-items: center;
-    box-shadow: 2px -2px 100px red;
 }
 
 .header_menu ul li {
-    margin: 0 35px;
+    margin: 20PX;
+    padding: 3px 2px 0px 2px;
+    background-color: rgba(248, 206, 129, 0.7);
+    display:;
 }
 
 .header_menu ul li a {
+    background-color: rgba(248, 206, 129, 0.7);
+    padding-bottom: 6px;
     text-decoration: none;
-    font-weight: bold;
-    font-size: large;
+    font-size: 22px;
+    color: blue;
+}
+.header_menu ul li:hover{
+    background-color: blue;
+}
+.header_menu ul li a:hover{
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius:10px ;
+}
+.line{
+    color: red;
+    height: 25px;
+    background-color: red;
+}
+.sub_header_menu{
+    display: none;
+}
+.header_menu ul li:hover .sub_header_menu{
+    display: flex;
+    position: absolute;
 }
 
 .header_menu ul li:hover {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 /* This source code are side bar*/
+
 .main_menu {
-    display: inline;
-    border: 1px solid black;
-    width: 15vw;
-    height: 42vh;
-    text-align: left;
-    background-color: #f7d82c;
+    /* border: 1px solid black; */
 }
 
 .main_menu ul {
     display: inline-flex;
     flex-direction: column;
     list-style: none;
+    width: 15vw;
 }
 
 .main_menu ul li {
-    width: 234px;
-    margin-bottom: 3px;
-    margin-top: 2px;
-    padding: 3px;
-    background-color: #f7d82c;
-    border-bottom: 1px solid maroon;
-}
+    background-color: rgba(248, 206, 129, 0.7);
+    border: 1px solid black;
+    padding: 3px 10px;
+    width: 180PX;
 
-.main_menu ul li:last-child {
-    border: none;
 }
 
 .main_menu ul li a {
-    color: blue;
     text-decoration: none;
-    transition: 0.5s;
+    background: padding-box;
+    color: blue;
 }
 
 .sub_menu {
     display: none;
+}
+
+.main_menu ul li:hover {
+    background-color: #fff;
+}
+
+.main_menu ul li:hover .sub_menu {
+    display: block;
+    position: absolute;
+    margin-left: 190px;
+    margin-top: -22px;
+}
+
+.main_menu ul li:hover .sub_menu ul li {
+    width: 270px;
 }
 
 .sub_menu_2 {
@@ -85,33 +121,22 @@
 .sub_menu ul li:hover .sub_menu_2 {
     display: block;
     position: absolute;
-    margin-top: -30px;
-    margin-left: 230px;
+    margin-left: 190px;
+    margin-top: -22px;
 }
 
-.main_menu ul li:hover .sub_menu {
-    display: block;
-    position: absolute;
-    margin-top: -30px;
-    margin-left: 230px;
-}
-
-.main_menu ul li:hover .sub_menu ul {
-    display: block;
-    margin: 10px;
-}
-
-.main_menu ul li a:hover {
-    color: white;
+.sub_menu ul li:hover .sub_menu_2 {
+    width: 200px;
 }
 
 .fa {
-    color: white;
+    background-color: rgba(238, 195, 115, 0.7);
+    background: padding-box;
+    color: black;
     float: right;
-
 }
 
-.image {
+/* .image {
     float: right;
 }
 
@@ -173,4 +198,4 @@
 .left_box h1{
     background-color: #f3d007;
     font-size: 20px;
-}
+} */
