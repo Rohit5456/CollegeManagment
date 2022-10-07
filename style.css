@@ -73,17 +73,6 @@
     margin: 2px;
     border-bottom: 2px dotted blue;
 }
-
-.header_menu ul li:hover {
-    /* background-color: blueviolet; */
-}
-
-/* This source code are side bar*/
-
-.main_menu {
-    /* border: 1px solid black; */
-}
-
 .main_menu ul {
     display: inline-flex;
     flex-direction: column;
