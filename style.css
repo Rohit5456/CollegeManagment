@@ -30,8 +30,8 @@
 }
 
 .header_menu ul li {
-    margin: 20PX;
-    padding: 3px 2px 0px 2px;
+    margin: 35PX;
+    padding: 8px 2px 0px 2px;
     background-color: rgba(248, 206, 129, 0.7);
 }
 
@@ -39,7 +39,7 @@
     background-color: rgba(248, 206, 129, 0.7);
     padding-bottom: 6px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 17px;
     color: blue;
 }
 .header_menu ul li:hover{
@@ -47,6 +47,7 @@
 }
 .header_menu ul li a:hover{
     background-color: #fff;
+    padding-top: 6px;
     border-top-right-radius: 10px;
     border-top-left-radius:10px ;
 }
@@ -58,6 +59,18 @@
 .sub_header_menu{
     display: none;
 }
+.sub_header_menu ul li{
+    border-top: 2px dotted blue;    
+}
+.sub_header_menu ul li:last-child{
+    border-bottom: 2px dotted blue;
+}
+.sub_header_menu ul li:first-child{
+    border-top: none;
+}
+.sub_header_menu ul li a{
+    /* background-color: red; */    
+}
 .header_menu ul li:hover .sub_header_menu{
     display: block;
     flex-direction: column;
@@ -66,12 +79,17 @@
 .header_menu ul li:hover .sub_header_menu ul{
     background-color: white;
     display: block;
-    height: 200px;
-    width: 200px;
+    height: 350px;
+    width: 250px;
+    border-radius: 5px;
 }
 .header_menu ul li:hover .sub_header_menu ul li{
-    margin: 2px;
-    border-bottom: 2px dotted blue;
+    background-color: #fff;
+    margin:3px 10px;
+    padding: 8px;
+}
+.sub_header_menu ul li:hover .sub_header_menu ul li{
+    background-color: blue;
 }
 .main_menu ul {
     display: inline-flex;
